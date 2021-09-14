@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products Kenari</title>
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <link rel="stylesheet" href="assets/styles/responsive.css">
+        <link rel="stylesheet" href="assets/icons.css">
+        <link rel="stylesheet" href="assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    </head>
+    <body style="background-color: #f5f5f5;">
+    <!--Navbar / laptop and larger screensa-->
+    <div class="navbar" id="laptopview">
+        <a href="#"><img src="assets/images/logo.png" alt="" width="170px" height="60px"></a>
+
+                <!-- Search bar  laptop-->
+           <div class="topnav-left" style="margin-right: -290px;">
+                <div class="dropdown">
+                    <button type="button" class="btn bg-info dropdown-toggle search-btn1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">All <span class="caret"></span></button>
+                    <div class="dropdown-content">
+                        <a href="#">Fashion</a>
+                        <a href="#">Computers</a>
+                        <a href="#">Books</a>
+                    </div>
+                </div>
+           </div>
+            <form class="form-inline " id="laptopview" style="margin-left: -50px" >
+                    <input type="text" class="form-control search"  placeholder="Search for any Product, Brand, Category....">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success  btn btn-success my-4 my-sm-0" type="submit"><i class="icon-magnifier" style="font-size: 17px;"></i>
+                        </button>
+                    </span>
+            </form>
+
+            <!-- Dropdown menu -->
+      
+        <div class="topnav-right">
+            <div class="dropdown">
+                <button class="dropbtn"><i class="icon-user"
+                        style="font-size: 20px; font-weight:200; margin-top: -1px; margin-right: 8px;"></i>Hi, Customer <i
+                        class="icon-arrow-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Account</a>
+                    <a href="#">Orders</a>
+                    <a href="#">Inbox</a>
+                    <a href="#">Saved Items</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="icon-question"
+                        style="font-size: 20px; font-weight:200; margin-top: -1px; margin-right: 8px;"></i>Help <i
+                        class="icon-arrow-down"></i>
+                </button>
+                <div class="dropdown-content">
+                <a href="#">Help Center</a>
+                <a href="#">Place & Track Order</a>
+                <a href="#">Order Cancellation</a>
+                <a href="#">Returns & Refunds</a>
+                </div>
+            </div>
+                <a href="" style="display: flex;"><i class="icon-basket" style="font-size: 20px; font-weight:200; margin-right: 8px;">
+                    <span class="badge" style="background-color: green;">0</span>
+                </i> Cart</a>
+        </div> 
+    </div>
+    <!-- End of navbar laptop section -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#"><i class="icon-briefcase" style="margin-right: 3px;"></i>Office Products</a>
+        <a href="#"><i class="icon-magic-wand" style="margin-right: 3px;"></i>Health & Beauty</a>
+        <a href="#"><i class="icon-screen-smartphone" style="margin-right: 3px;"></i>Phones & Tablets</a>
+        <a href="#"><i class="icon-mustache" style="margin-right: 3px;"></i>Fashion</a>
+        <a href="#"><i class="icon-screen-desktop" style="margin-right: 3px;"></i>Computers</a>
+        <a href="#"><i class="icon-energy" style="margin-right: 3px;"></i>Electronics</a>
+        <a href="#"><i class="icon-diamond" style="margin-right: 3px;"></i>Jewelry</a>
+        <a href="#"><i class="icon-game-controller" style="margin-right: 3px;"></i>Gaming</a>
+        <a href="#"><i class="icon-emotsmile" style="margin-right: 3px;"></i>Baby Products</a>
+        <a href="#"><i class="icon-trophy" style="margin-right: 3px;"></i>Sports & Outdoors</a>
+        <a href="#"><i class="ion-model-s" style="margin-right: 3px;"></i>Automobile</a>
+        <a href="#"><i class="icon-book-open" style="margin-right: 3px;"></i>Books & Movies</a>
+        <a href="#"><i class="fa fa-cutlery" style="margin-right: 3px;"></i>Foods & Grocery</a>
+        <a href="#"><i class="icon-list" style="margin-right: 3px;"></i>Others</a>
+    </div>
+
+
+    <!-- start navbar mobile -->
+    <div class="navbar" id="mobileview">
+        <a href="#"><img src="assets/images/logo.png" alt="" width="170px" height="60px"></a>
+        <span style="font-size:25px;cursor:pointer; margin-right:3px;" onclick="openNav()">&#9776;</span>
+        <!-- Dropdown menu -->
+    
+        <div class="topnav-right">
+            <a href=""><i class="icon-user" style="font-size: 24px; font-weight:200;"></span></i></a>
+            <a href=""><i class="icon-question" style="font-size: 24px; font-weight:200;"></i></a>
+            <a href=""><i class="icon-basket" style="font-size: 24px; font-weight:200;"></i></a>
+        </div>
+    </div>
+
+    <!--Search bar mobile-->
+    <div class="col" id="mobileview">
+            <form class="form-inline my-2 my-lg-0">                    
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search for any Product, Brand, Category...">
+                       <button class="btn btn-success  btn btn-success my-4 my-sm-0" type="submit">
+                            <i class="icon-magnifier" style="font-size: 17px;"></i>
+                        </button>
+            </form>
+    </div>
+    <!--End of all navbars, mobile and laptop-->
+
+    
+
+        <!-- breadcrumb menu -->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Products</li>
+            </ol>
+        
+        <!--Recommended deal section-->
+        <div class="container">
+            <div class="row g-2">
+                <div class="col-md-3" id="hard-nav" style="border-radius: 5px;">
+                    <div class="">
+                        <div class="hard-nav">
+                            <ul class="parent-menu" style="padding-top: 20px;">
+                                <li><a href="#"><i class="icon-briefcase" style="margin-right: 3px;"></i>Office Products</a>
+                                    <ul>
+                                        <li><h6 style="color: green;"><i class="icon-briefcase" style="margin-right: 3px;"></i>Office Products</h6></a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="icon-magic-wand" style="margin-right: 3px;"></i>Health & Beauty</a>
+                                    <ul>
+                                        <li><h6 style="color: green;"><i class="icon-magic-wand" style="margin-right: 3px;"></i>Health & Beauty</h6></a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="icon-screen-smartphone" style="margin-right: 3px;"></i>Phones & Tablets</a>
+                                    <ul>
+                                        <li><h6 style="color: green;"><i class="icon-screen-smartphone" style="margin-right: 3px;"></i>Phones & Tablets</h6></a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="icon-mustache" style="margin-right: 3px;"></i>Fashion</a>
+                                    <ul>
+                                        <li><h6 style="color: green;"><i class="icon-mustache" style="margin-right: 3px;"></i>Fashion</h6></a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="icon-screen-desktop" style="margin-right: 3px;"></i>Computers</a>
+                                    <ul>
+                                        <li><h6 style="color: green;"><i class="icon-screen-desktop" style="margin-right: 3px;"></i>Computers</h6></a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="icon-energy" style="margin-right: 3px;"></i>Electronics</a>
+                                    <ul>
+                                        <li><h6 style="color: green;"><i class="icon-energy" style="margin-right: 3px;"></i>Electronics</h6></a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="icon-diamond" style="margin-right: 3px;"></i>Jewelry</a>
+                                    <ul>
+                                        <li><h6 style="color: green;"><i class="icon-diamond" style="margin-right: 3px;"></i>Jewelry</h6></a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="icon-game-controller" style="margin-right: 3px;"></i>Gaming</a>
+                                    <ul>
+                                        <li><h6 style="color: green;"><i class="icon-game-controller" style="margin-right: 3px;"></i>Gaming</h6></a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="icon-emotsmile" style="margin-right: 3px;"></i>Baby Products</a>
+                                    <ul>
+                                        <li><h6 style="color: green;"><i class="icon-emotsmile" style="margin-right: 3px;"></i>Baby Products</h6></a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="icon-trophy" style="margin-right: 3px;"></i>Sports & Outdoors</a>
+                                    <ul>
+                                        <li><h6 style="color: green;"><i class="icon-trophy" style="margin-right: 3px;"></i>Sports & Outdoors</h6></a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="ion-model-s" style="margin-right: 3px;"></i>Automobile</a>
+                                    <ul>
+                                        <li><h6 style="color: green;"><i class="ion-model-s" style="margin-right: 3px;"></i>Automobile</h6></a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="icon-book-open" style="margin-right: 3px;"></i>Books & Movies</a>
+                                    <ul>
+                                        <li><h6 style="color: green;"><i class="icon-book-open" style="margin-right: 5px;"></i>Books & Movies</h6></a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="fa fa-cutlery" style="margin-right: 3px;"></i>Foods & Grocery</a>
+                                    <ul>
+                                        <li><h6 style="color: green;"><i class="fa fa-cutlery" style="margin-right: 5px;"></i>Foods & Grocery</h6></a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="icon-list" style="margin-right: 3px;"></i>Others</a>
+                                    <ul>
+                                        <li><h6 style="color: green;"><i class="icon-list" style="margin-right: 5px;"></i>Others</h6></a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+        
+                                        <li><a href="#">item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="pl-3"> 
+                        <div class="row" id="items" style="height: 390px;"">
+                            <div class="col-md-3 col-6" id="child">
+                                 <img src="assets/images/products/suit1.jpg" alt="loading...">
+                                 <span class="notify-badge">NEW</span>
+                                 <b>Turkey Suits</b>
+                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                                 <span><h5>KSh 600</h5></span>
+                                 <span><del>KSh 780</del></span>
+                                 <button>Add to Cart</button>
+                            </div>
+                            <div class="col-md-3 col-6" id="child">
+                                 <img src="assets/images/products/shoes4.jpg" alt="Loading...">
+                                 <span class="notify-badge">-40%</span>
+                                 <b>Rubber shoes</b>
+                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                                 <span><h5>KSh 999</h5></span>
+                                 <span><del>KSh 1200</del></span>
+                                 <button>Add to Cart</button>
+                            </div>
+                            <div class="col-md-3 col-6" id="child" id="hide">
+                                 <img src="assets/images/products/sam.jpg" alt="Loading...">
+                                 <span class="notify-badge">-20%</span>
+                                 <b>Samsung 65"</b>
+                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                                 <span><h5>KSh 75,400</h5></span>
+                                 <span><del>KSh 80,00</del></span>
+                                 <button>Add to Cart</button>
+                            </div>
+                            <div class="col-md-3 col-6" id="child" id="hide">
+                                 <img src="assets/images/products/sam.jpg" alt="Loading...">
+                                 <span class="notify-badge">-20%</span>
+                                 <b>Samsung 65"</b>
+                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                                 <span><h5>KSh 75,400</h5></span>
+                                 <span><del>KSh 80,00</del></span>
+                                 <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <!--All product section-->
+            <div class="container pt-4" id="productsection">
+                <div class="row">
+                    <div class="col-md-3">
+                        <p style="color: green; margin-left: 20px;">Filters</p>
+                        <hr>
+                        <!-- laptop and desktop screens-->
+                        <div class="col" id="laptopview">
+                            <p style="color: green;"> Brands</p>
+                            <label class="mr-3">
+                                <input type="checkbox" class="mr-1" name="" value=""> <b> HTC</b> <br>
+                                <input type="checkbox" class="mr-1" name="" value=""> <b>Samsung</b> <br>
+                                <input type="checkbox" class="mr-1" name="" value=""> <b>Techno</b> <br>
+                                <input type="checkbox" class="mr-1" name="" value=""> <b>Apple</b> <br>
+                                <input type="checkbox" class="mr-1" name="" value=""> <b>Hp </b><br>
+                            </label> <br>
+                            <button type="submit" class="btn mb-2"> Show more +</button>
+                            <hr>
+                            <p style="color: green;"> Colors</p>
+                            <label class="mr-3">
+                                <input type="checkbox" class="mr-1" name="" value=""> <b> Mixed</b> <br>
+                                <input type="checkbox" class="mr-1" name="" value=""> <b>Blue</b> <br>
+                                <input type="checkbox" class="mr-1" name="" value=""> <b>Yellow</b> <br>
+                                <input type="checkbox" class="mr-1" name="" value=""> <b>Red</b> <br>
+                            </label> <br>
+                            <button type="submit" class="btn mb-2"> Show more +</button>
+                            <hr>
+
+                            <p style="color: green;"> Price (KSh)</p>
+                            <p> <small>  Price: 140 - 1000000</small></p>
+                        </div>
+                    
+                    </div> 
+                    
+                    <div class="col-md-9" id="crazy">
+                        <h5 style="color: black;"><i class="ion-android-menu" style="color: green;" id="mobileview"></i> All Products</h5>
+                        <hr>
+                        <div class="row" id="items" ">
+                            <div class="col-md-3 col-6" id="child">
+                                 <img src="assets/images/products/suit1.jpg" alt="loading...">
+                                 <span class="notify-badge">NEW</span>
+                                 <b>Turkey Suits</b>
+                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                                 <span><h5>KSh 600</h5></span>
+                                 <span><del>KSh 780</del></span>
+                                 <button>Add to Cart</button>
+                            </div>
+                            <div class="col-md-3 col-6" id="child">
+                                 <img src="assets/images/products/shoes4.jpg" alt="Loading...">
+                                 <span class="notify-badge">-40%</span>
+                                 <b>Rubber shoes</b>
+                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                                 <span><h5>KSh 999</h5></span>
+                                 <span><del>KSh 1200</del></span>
+                                 <button>Add to Cart</button>
+                            </div>
+                            <div class="col-md-3 col-6" id="child">
+                                 <img src="assets/images/products/sam.jpg" alt="Loading...">
+                                 <span class="notify-badge">-20%</span>
+                                 <b>Samsung 65"</b>
+                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                                 <span><h5>KSh 75,400</h5></span>
+                                 <span><del>KSh 80,00</del></span>
+                                 <button>Add to Cart</button>
+                            </div>
+                            <div class="col-md-3 col-6" id="child">
+                                 <img src="assets/images/products/sam.jpg" alt="Loading...">
+                                 <span class="notify-badge">-20%</span>
+                                 <b>Samsung 65"</b>
+                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                                 <span><h5>KSh 75,400</h5></span>
+                                 <span><del>KSh 80,00</del></span>
+                                 <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   
+            </div>
+        </div> 
+        <div class="container shadow p-3  mb-5 bg-white rounded" id="items">
+            <div class="row">
+                <div class="col-6 col-md-2" id="child">
+                    <img src="assets/images/products/suit1.jpg" alt="loading...">
+                    <span class="notify-badge">NEW</span>
+                    <b>Turkey Suits</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                    <span><h5>KSh 600</h5></span>
+                    <span><del>KSh 780</del></span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="col-6 col-md-2" id="child">
+                    <img src="assets/images/products/shoes4.jpg" alt="Loading...">
+                    <span class="notify-badge">-40%</span>
+                    <b>Rubber shoes</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                    <span><h5>KSh 999</h5></span>
+                    <span><del>KSh 1200</del></span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="col-6 col-md-2" id="child">
+                    <img src="assets/images/products/sam.jpg" alt="Loading...">
+                    <span class="notify-badge">-20%</span>
+                    <b>Samsung 65"</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                    <span><h5>KSh 75,400</h5></span>
+                    <span><del>KSh 80,00</del></span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="col-6 col-md-2" id="child">
+                    <img src="assets/images/products/oppo.jpg" alt="Loading...">
+                    <span class="notify-badge">-15%</span>
+                    <b>Oppo A3</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                    <span><h5>KSh 9,999</h5></span>
+                    <span><del>KSh 13,000</del></span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="col-6 col-md-2" id="child">
+                    <img src="assets/images/products/nunix.jpg" alt="Loading...">
+                    <span class="notify-badge">-35%</span>
+                    <b>Deep fryer</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                    <span><h5>KSh 4,200</h5></span>
+                    <span><del>KSh 4,500</del></span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="col-6 col-md-2" id="child">
+                    <img src="assets/images/products/fr.jpeg" alt="Loading...">
+                    <span class="notify-badge">-35%</span>
+                    <b>Samsung Fridge</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                    <span><h5>KSh 16,000</h5></span>
+                    <span><del>KSh 17,780</del></span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container shadow p-3  mb-5 bg-white rounded" id="items">
+            <div class="row">
+                <div class="col-6 col-md-2" id="child">
+                    <img src="assets/images/products/suit1.jpg" alt="loading...">
+                    <span class="notify-badge">NEW</span>
+                    <b>Turkey Suits</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                    <span><h5>KSh 600</h5></span>
+                    <span><del>KSh 780</del></span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="col-6 col-md-2" id="child">
+                    <img src="assets/images/products/shoes4.jpg" alt="Loading...">
+                    <span class="notify-badge">-40%</span>
+                    <b>Rubber shoes</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                    <span><h5>KSh 999</h5></span>
+                    <span><del>KSh 1200</del></span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="col-6 col-md-2" id="child">
+                    <img src="assets/images/products/sam.jpg" alt="Loading...">
+                    <span class="notify-badge">-20%</span>
+                    <b>Samsung 65"</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                    <span><h5>KSh 75,400</h5></span>
+                    <span><del>KSh 80,00</del></span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="col-6 col-md-2" id="child">
+                    <img src="assets/images/products/oppo.jpg" alt="Loading...">
+                    <span class="notify-badge">-15%</span>
+                    <b>Oppo A3</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                    <span><h5>KSh 9,999</h5></span>
+                    <span><del>KSh 13,000</del></span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="col-6 col-md-2" id="child">
+                    <img src="assets/images/products/nunix.jpg" alt="Loading...">
+                    <span class="notify-badge">-35%</span>
+                    <b>Deep fryer</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                    <span><h5>KSh 4,200</h5></span>
+                    <span><del>KSh 4,500</del></span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="col-6 col-md-2" id="child">
+                    <img src="assets/images/products/fr.jpeg" alt="Loading...">
+                    <span class="notify-badge">-35%</span>
+                    <b>Samsung Fridge</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+                    <span><h5>KSh 16,000</h5></span>
+                    <span><del>KSh 17,780</del></span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        
+    </body>
+</html>

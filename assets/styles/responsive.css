@@ -1,0 +1,54 @@
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+@media only screen and (max-width: 720px){
+    #hard-nav{
+        display: none;
+    }
+    #twoimages{
+        display: none;
+    }
+    #crazy{
+        padding-top: 200px;
+	}
+	#hambaga{
+		display: block;
+	}
+	#mylogo{
+		left: -500;
+	}
+}
+@media screen and (max-width: 767px) {
+	#acc{
+		margin-top: 5px;
+		
+	}
+}
+@media screen and (max-width: 920px) {
+    #register {
+      width: 100%;
+    }
+}
+/*
+Small devices (landscape phones, 576px and up)*/
+@media only screen and (max-width: 760px),(min-device-width: 768px) and (max-device-width: 1024px) {
+    .delivery_care {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+/*filters section
+/* Desktops and laptops ---------- */
+@media screen and (min-width: 1224px) {
+	#mobileview{
+		display: none;
+	}
+}
+/* Mobile phones (portrait and landscape) ---------- */
+@media screen and (max-width: 767px) {
+	#laptopview {
+		display: none;
+	}
+}
+
